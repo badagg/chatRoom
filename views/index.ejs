@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>chat room</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/chatroom.css" />
+</head>
+
+<body>
+<div class="face_box"></div>
+<div class="chatroom">
+	<div class="msg_notice" id="msgNotice"></div>
+	<div class="tabs_box fl">
+		<ul id="tabsBox">
+			<li class="item on qun" data-key="qun">
+				<img class="face" src="images/face/qun.jpg" />
+				<span class="name">公告聊天群</span>
+			</li>
+		</ul>
+	</div>
+	<div class="user_box fr">
+		<h3>在线成员(<em id="counter"></em>)</h3>
+		<ul id="userBox"></ul>
+	</div>
+	<div class="chat_box">
+		<div class="win" id="msgBox">
+			<div class="msg_box on" data-key="qun"></div>
+		</div>
+		<div class="ipt_box">
+			<textarea class="ta" id="ta"></textarea>
+			<a href="javascript:;" class="btn" id="btnSend">发送<br />(Enter)</a>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/chatApp.js"></script>
