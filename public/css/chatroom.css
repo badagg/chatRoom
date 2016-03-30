@@ -1,0 +1,66 @@
+body{ background:#333;}
+.chatroom{position:absolute; width:850px; height:440px; left:50%; top:-440px; margin-left:-425px; opacity:0; box-shadow:0px 2px 5px rgba(0,0,0,0.3); display:block;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;}
+.chatroom.view{width:850px; height:440px; left:50%; top:50%; margin-left:-425px; margin-top:-220px;  opacity:1;}
+/*msg_notice*/
+.chatroom .msg_notice{ position:absolute; left:0; top:-26px; height:26px; overflow:hidden;}
+.chatroom .msg_notice span{ float:left;margin-right:2px;border:2px solid #fff; display:block; width:20px; height:20px; cursor:pointer;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;}
+.chatroom .msg_notice span:hover{ border-color:#ff3c3c;}
+.chatroom .msg_notice img{ width:20px; height:20px;}
+/*chat_box*/
+.chatroom .chat_box{ background:#fff; margin:0 150px 0 150px; height:440px;}
+.chatroom .chat_box .win{height:350px;border-bottom:1px solid #ddd;}
+.chatroom .chat_box .msg_box{ padding:10px; height:330px; overflow:auto; overflow-x:visible; display:none;}
+.chatroom .chat_box .on{ display:block;}
+.chatroom .chat_box .msg_box .item { margin-bottom:20px;}
+.chatroom .chat_box .msg_box .item .p1{ margin-bottom:10px;}
+.chatroom .chat_box .msg_box .item .name{ font-weight:bold; font-size:12px; }
+.chatroom .chat_box .msg_box .item .time{ font-weight:normal; margin-left:10px; color:#999; font-size:10px;}
+.chatroom .chat_box .msg_box .item .p2{ font-size:12px; color:#444;}
+.chatroom .chat_box .ipt_box{ height:70px; padding:10px;}
+.chatroom .chat_box .ipt_box textarea{ width:425px; height:70px; border:none; padding-right:10px; border-right:1px solid #ddd; resize:none; outline:none;}
+.chatroom .chat_box .ipt_box .btn{display:inline-block; text-decoration:none; color:#fff; text-align:center; padding-top:15px; vertical-align:top; margin-top:3px; margin-left:5px; width:84px; height:50px; background:#ff3c3c;font-size:14px; line-height:20px;}
+.chatroom .chat_box .ipt_box .btn:hover{ background:#f00;}
+
+
+/*tabs_box*/
+.chatroom .tabs_box{ width:150px; height:440px; background:#222;overflow:auto;overflow-x:hidden;}
+.chatroom .tabs_box .item{ position:relative; height:35px; width:150px; cursor:pointer; margin-bottom:5px;}
+.chatroom .tabs_box .item:before{ content:''; position:absolute; top:17px; right:0; width:100%; height:0%; background:#333;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;}
+.chatroom .tabs_box .item:hover .close{ display:block;}
+.chatroom .tabs_box .item:hover:before{ height:100%; top:0;}
+.chatroom .tabs_box .item .face{ position:absolute; left:5px; top:4px; border:1px solid #fff;}
+.chatroom .tabs_box .item .name{ position:absolute; width:100px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; left:40px; top:8px; color:#fff;}
+.chatroom .tabs_box .item .close{ position:absolute; display:none; top:5px; right:5px; height:9px; width:9px; background:#fff; color:#000; font-size:0; line-height:0; background:url(../images/icon_bg.png) center no-repeat #fff;}
+.chatroom .tabs_box .on:before{ height:100%; top:0; background:#fff;}
+.chatroom .tabs_box .on .name{ color:#333;}
+.chatroom .tabs_box .activa{ width:100%; background:#ff6600;}
+
+/*user_box*/
+.chatroom .user_box{ width:150px; height:440px; background:#fff; border-left:1px solid #ddd;}
+.chatroom .user_box h3{ height:26px; background:#f1f1f1; line-height:26px; border-bottom:1px solid #ddd; font-weight:normal; text-indent:10px; font-size:12px; }
+.chatroom .user_box ul{ overflow:auto;overflow-x:hidden; height:413px;}
+.chatroom .user_box .item{ position:relative; height:22px; background:#f9f9f9; margin-bottom:1px; cursor:pointer;}
+.chatroom .user_box .item .face{ position:absolute; width:16px; height:16px; left:10px; top:3px; }
+.chatroom .user_box .item .name{ position:absolute; width:100px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; left:35px; top:1px; color:#333;}
+.chatroom .user_box .item:hover{ background:#eee;}
+
+/*face_box*/
+.face_box .item{ position:absolute; height:29px; width:29px; overflow:hidden;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;}
+.face_box img{ position:absolute;border:2px solid #666;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;cursor:pointer;}
+.face_box .item:hover img{border-color:#fff}
+.face_box .cur { width:160px;}
+.face_box .on img{border-color:#fff}
+.face_box .rt{transform:scale(0,0);-webkit-transform:scale(0,0);-webkit-transition: all 0.5s ease;transition: all 0.5s ease; opacity:0;}
+.face_box .item span{ position:absolute; width:115px; padding:0 10px; left:29px; height:29px; background:#fff;}
+.face_box .item input{ width:80px; margin-top:4px; border:none; outline:none;}
+.face_box .item a{ margin-left:5px; color:#999; text-decoration:none;}
+.face_box .item a:hover{ color:#666;}
+
+
+
+
+
+
+
+
+

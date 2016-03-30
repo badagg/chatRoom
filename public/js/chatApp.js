@@ -13,7 +13,7 @@
 		}
 	
 		/*链接websocket服务器*/
-		var socket = new WebSocket('ws://192.168.117.69:1314');
+		var socket = new WebSocket('ws://localhost:4000');
 		socket.onopen = function(event){
 			console.log(event)
 			addNewUser();

@@ -3,7 +3,7 @@
 	var webSocketServer = require("ws").Server;
 	
 	/*实例化一个socket服务 并设置端口号*/
-	var wss = wss ? wss : new webSocketServer({port:1314});
+	var wss = wss ? wss : new webSocketServer({port:4000});
 	
 	/*创建客户端组*/
 	var wsGroup = [];
